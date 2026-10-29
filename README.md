@@ -35,7 +35,7 @@ python3 probe.py --out status.json
 
 6 OK, 6 CRITICAL, 0 DOWN. The author's Portfolio, AI Tools Blog and
 Custom Designs Store were up (HTTP 200), all public baselines were up,
-and all six Errands dialerhosting nodes from the reference photo
+and all six WFS nodes at Hakeem Walee
 failed HTTPS while TCP answered — the same pattern the photo's alerts
 panel shows. Full table and cautions in [MANUAL.md](MANUAL.md) §5.
 

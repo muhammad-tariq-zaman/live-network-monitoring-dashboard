@@ -42,7 +42,8 @@ def draw_dashboard(data, path):
         d.ellipse([x + 14, yy + 16, x + 26, yy + 28], fill=dot)
         d.text((x + 34, yy + 12), t["name"], fill=(255, 255, 255), font=font(19, True))
         d.text((x + col_w // 2 - 110, yy + 12), t["status"], fill=(255, 255, 255), font=font(16, True))
-        d.text((x + 14, yy + 44), t["host"], fill=(156, 163, 175), font=font(15))
+        sub = "Hakeem Walee" if "Hakeem Walee" in (t.get("group") or "") else t["host"]
+        d.text((x + 14, yy + 44), sub, fill=(156, 163, 175), font=font(15))
         d.text((x + 14, yy + 70), f"HTTP {t['http_code'] or '—'}   ·   TCP 443 {t['tcp_ms'] or '—'} ms   ·   TLS {t['tls_ms'] or '—'} ms", fill=(229, 231, 235), font=font(15))
         err_short = ""
         if t["error"]:

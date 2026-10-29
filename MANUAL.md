@@ -32,7 +32,7 @@ connection.
 | Group | Targets | Why |
 |---|---|---|
 | Your sites | Portfolio (GitHub Pages), AI Tools Blog (Blogspot), Custom Designs Store (Shopify) | The author's own public sites |
-| Errands nodes (photo) | errands1, errands2, errands4, errands6, errands10, errands11 on dialerhosting.com | The nodes shown in the reference photo, probed — never assumed |
+| Hakeem Walee — WFS nodes | WFS-1, WFS-2, WFS-4, WFS-6, WFS-10, WFS-11 at Hakeem Walee | The nodes shown in the reference photo, probed — never assumed |
 | Baselines | Google DNS (8.8.8.8), Cloudflare DNS (1.1.1.1), Google | The photo's "Office & Internet" panel: ISP uplinks and public baselines |
 
 Edit the list in `probe.py` (`DEFAULT_TARGETS`) or pass your own
@@ -132,12 +132,12 @@ result, not sample data:
 | Portfolio (GitHub Pages) | OK | 200 | ~1 ms | ~162 ms | ~495 ms |
 | AI Tools Blog (Blogspot) | OK | 200 | ~1 ms | ~103 ms | ~905 ms |
 | Custom Designs Store (Shopify) | OK | 200 | ~1 ms | ~89 ms | ~1,434 ms |
-| Errands1 | CRITICAL | 000 | ~1 ms | ~94 ms | timeout 8,002 ms |
-| Errands2 | CRITICAL | 000 | ~1 ms | ~112 ms | ~706 ms |
-| Errands4 | CRITICAL | 000 | ~1 ms | ~96 ms | timeout 8,002 ms |
-| Errands6 | CRITICAL | 000 | ~1 ms | ~98 ms | timeout 8,002 ms |
-| Errands10 | CRITICAL | 000 | ~1 ms | ~94 ms | ~801 ms |
-| Errands11 | CRITICAL | 000 | ~1 ms | ~90 ms | timeout 8,001 ms |
+| WFS-1 | CRITICAL | 000 | ~1 ms | ~94 ms | timeout 8,002 ms |
+| WFS-2 | CRITICAL | 000 | ~1 ms | ~112 ms | ~706 ms |
+| WFS-4 | CRITICAL | 000 | ~1 ms | ~96 ms | timeout 8,002 ms |
+| WFS-6 | CRITICAL | 000 | ~1 ms | ~98 ms | timeout 8,002 ms |
+| WFS-10 | CRITICAL | 000 | ~1 ms | ~94 ms | ~801 ms |
+| WFS-11 | CRITICAL | 000 | ~1 ms | ~90 ms | timeout 8,001 ms |
 | Google DNS | OK | 200 | ~1 ms | ~94 ms | ~315 ms |
 | Cloudflare DNS | OK | 200 | ~2 ms | ~98 ms | ~1,080 ms |
 | Google | OK | 200 | ~1 ms | ~81 ms | ~501 ms |
@@ -145,7 +145,7 @@ result, not sample data:
 **Summary: 6 OK, 6 CRITICAL, 0 DOWN.**
 
 Read it correctly: the author's own three sites and all three public
-baselines are up, while all six Errands dialerhosting nodes fail HTTPS
+baselines are up, while all six WFS nodes at Hakeem Walee fail HTTPS
 (TCP answers, TLS starts, then the HTTPS request fails — hence
 `HTTPSUnreachableWhileTCP`, not `SiteUnreachable`). That is the same
 pattern the photo's right panel shows. Two cautions, stated plainly:
@@ -197,7 +197,7 @@ nohup python3 dashboard.py --port 8000 --interval 60 > server.log 2>&1 &
 |---|---|---|
 | Everything CRITICAL, TCP ~1 ms | You are behind an egress proxy (like this sandbox) | Expected here; run it on a direct network for true values, or keep it as a proxy-path monitor and label it as such |
 | `ping: Operation not permitted` | Raw sockets blocked on this host | Normal here; ICMP is reported unavailable, not failed |
-| Dashboard page loads but says "probing…" | First probe still running (Errands nodes can take 8 s each on timeout) | Wait ~40 s and refresh; lower `--interval` only after the first run finishes |
+| Dashboard page loads but says "probing…" | First probe still running (WFS nodes can take 8 s each on timeout) | Wait ~40 s and refresh; lower `--interval` only after the first run finishes |
 | Port 8000 already in use | Another copy is running | Stop the old one, or run with `--port 8001` |
 | A target you added shows DOWN | DNS or TCP genuinely failing from this vantage point | Check the target from another network before declaring it down everywhere |
 
