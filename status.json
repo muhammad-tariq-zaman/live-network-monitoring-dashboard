@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-10-29 19:50:27 PKT",
+  "vantage_point": "This monitor \u2014 TCP 443 + TLS + HTTPS probes via curl; ICMP unavailable here (raw sockets blocked), not counted as a failure",
+  "icmp": "unavailable (raw sockets blocked on this host)",
+  "targets": [
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "host": "muhammad-tariq-zaman.github.io",
+      "url": "https://muhammad-tariq-zaman.github.io",
+      "group": "Your sites",
+      "dns_ms": 7.0,
+      "tcp_ms": 1.3,
+      "tls_ms": 173.2,
+      "http_ms": 317.7,
+      "http_code": 200,
+      "error": null,
+      "status": "OK",
+      "alert": null
+    },
+    {
+      "id": "blog",
+      "name": "AI Tools Blog",
+      "host": "satisfactorynews.blogspot.com",
+      "url": "https://satisfactorynews.blogspot.com",
+      "group": "Your sites",
+      "dns_ms": 0.4,
+      "tcp_ms": 0.7,
+      "tls_ms": 90.2,
+      "http_ms": 884.4,
+      "http_code": 200,
+      "error": null,
+      "status": "OK",
+      "alert": null
+    },
+    {
+      "id": "store",
+      "name": "Custom Designs Store",
+      "host": "x06cvz-2u.myshopify.com",
+      "url": "https://x06cvz-2u.myshopify.com",
+      "group": "Your sites",
+      "dns_ms": 0.5,
+      "tcp_ms": 0.8,
+      "tls_ms": 89.1,
+      "http_ms": 903.6,
+      "http_code": 200,
+      "error": null,
+      "status": "OK",
+      "alert": null
+    },
+    {
+      "id": "errands1",
+      "name": "Errands1",
+      "host": "errands1.dialerhosting.com",
+      "url": "https://errands1.dialerhosting.com",
+      "group": "Errands nodes (photo)",
+      "dns_ms": 0.3,
+      "tcp_ms": 2.5,
+      "tls_ms": 107.1,
+      "http_ms": 8001.8,
+      "http_code": 0,
+      "error": "HTTPS request failed (HTTP 000) while TCP path answered",
+      "status": "CRITICAL",
+      "alert": "HTTPSUnreachableWhileTCP"
+    },
+    {
+      "id": "errands2",
+      "name": "Errands2",
+      "host": "errands2.dialerhosting.com",
+      "url": "https://errands2.dialerhosting.com",
+      "group": "Errands nodes (photo)",
+      "dns_ms": 0.7,
+      "tcp_ms": 1.8,
+      "tls_ms": 132.0,
+      "http_ms": 685.5,
+      "http_code": 0,
+      "error": "HTTPS request failed (HTTP 000) while TCP path answered",
+      "status": "CRITICAL",
+      "alert": "HTTPSUnreachableWhileTCP"
+    },
+    {
+      "id": "errands4",
+      "name": "Errands4",
+      "host": "errands4.dialerhosting.com",
+      "url": "https://errands4.dialerhosting.com",
+      "group": "Errands nodes (photo)",
+      "dns_ms": 0.4,
+      "tcp_ms": 0.8,
+      "tls_ms": 91.0,
+      "http_ms": 8002.0,
+      "http_code": 0,
+      "error": "HTTPS request failed (HTTP 000) while TCP path answered",
+      "status": "CRITICAL",
+      "alert": "HTTPSUnreachableWhileTCP"
+    },
+    {
+      "id": "errands6",
+      "name": "Errands6",
+      "host": "errands6.dialerhosting.com",
+      "url": "https://errands6.dialerhosting.com",
+      "group": "Errands nodes (photo)",
+      "dns_ms": 0.4,
+      "tcp_ms": 0.7,
+      "tls_ms": 142.5,
+      "http_ms": 8002.0,
+      "http_code": 0,
+      "error": "HTTPS request failed (HTTP 000) while TCP path answered",
+      "status": "CRITICAL",
+      "alert": "HTTPSUnreachableWhileTCP"
+    },
+    {
+      "id": "errands10",
+      "name": "Errands10",
+      "host": "errands10.dialerhosting.com",
+      "url": "https://errands10.dialerhosting.com",
+      "group": "Errands nodes (photo)",
+      "dns_ms": 1.2,
+      "tcp_ms": 1.5,
+      "tls_ms": 114.9,
+      "http_ms": 599.3,
+      "http_code": 0,
+      "error": "HTTPS request failed (HTTP 000) while TCP path answered",
+      "status": "CRITICAL",
+      "alert": "HTTPSUnreachableWhileTCP"
+    },
+    {
+      "id": "errands11",
+      "name": "Errands11",
+      "host": "errands11.dialerhosting.com",
+      "url": "https://errands11.dialerhosting.com",
+      "group": "Errands nodes (photo)",
+      "dns_ms": 0.7,
+      "tcp_ms": 0.8,
+      "tls_ms": 90.5,
+      "http_ms": 8002.5,
+      "http_code": 0,
+      "error": "HTTPS request failed (HTTP 000) while TCP path answered",
+      "status": "CRITICAL",
+      "alert": "HTTPSUnreachableWhileTCP"
+    },
+    {
+      "id": "google-dns",
+      "name": "Google DNS",
+      "host": "8.8.8.8",
+      "url": "https://dns.google",
+      "group": "Baselines",
+      "dns_ms": 0.1,
+      "tcp_ms": 1.6,
+      "tls_ms": 114.7,
+      "http_ms": 305.8,
+      "http_code": 200,
+      "error": null,
+      "status": "OK",
+      "alert": null
+    },
+    {
+      "id": "cloudflare-dns",
+      "name": "Cloudflare DNS",
+      "host": "1.1.1.1",
+      "url": "https://one.one.one.one",
+      "group": "Baselines",
+      "dns_ms": 0.1,
+      "tcp_ms": 0.9,
+      "tls_ms": 91.1,
+      "http_ms": 515.8,
+      "http_code": 200,
+      "error": null,
+      "status": "OK",
+      "alert": null
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "host": "www.google.com",
+      "url": "https://www.google.com",
+      "group": "Baselines",
+      "dns_ms": 0.5,
+      "tcp_ms": 0.7,
+      "tls_ms": 81.3,
+      "http_ms": 510.9,
+      "http_code": 200,
+      "error": null,
+      "status": "OK",
+      "alert": null
+    }
+  ],
+  "alerts": [
+    {
+      "target": "Errands1",
+      "alert": "HTTPSUnreachableWhileTCP",
+      "detail": "HTTPS request failed (HTTP 000) while TCP path answered"
+    },
+    {
+      "target": "Errands2",
+      "alert": "HTTPSUnreachableWhileTCP",
+      "detail": "HTTPS request failed (HTTP 000) while TCP path answered"
+    },
+    {
+      "target": "Errands4",
+      "alert": "HTTPSUnreachableWhileTCP",
+      "detail": "HTTPS request failed (HTTP 000) while TCP path answered"
+    },
+    {
+      "target": "Errands6",
+      "alert": "HTTPSUnreachableWhileTCP",
+      "detail": "HTTPS request failed (HTTP 000) while TCP path answered"
+    },
+    {
+      "target": "Errands10",
+      "alert": "HTTPSUnreachableWhileTCP",
+      "detail": "HTTPS request failed (HTTP 000) while TCP path answered"
+    },
+    {
+      "target": "Errands11",
+      "alert": "HTTPSUnreachableWhileTCP",
+      "detail": "HTTPS request failed (HTTP 000) while TCP path answered"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "ok": 6,
+    "critical": 6,
+    "down": 0
+  }
+}
